@@ -7,14 +7,15 @@ public class TwoRangesSum {
         if (numberToSkip<=lastInRow){
             if(lastInRow>0){
                 for (int i = 1; i < lastInRow; i++){
+                    sum2 = sum2 + i;
                     if (i == numberToSkip){
-                        sum2 = sum2 + numberToSkip;
+                        System.out.println("skipped sum is "+sum2);
                     }
-                    else {
+                    if (i>numberToSkip) {
                         sum += i;
                     }
                 }
-                System.out.println("skipped sum is "+sum2);
+
                 System.out.println("counted sum is "+sum);
             }else{
                 System.out.println("last number in row is negative");
