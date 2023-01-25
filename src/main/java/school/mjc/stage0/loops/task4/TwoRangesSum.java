@@ -10,7 +10,7 @@ public class TwoRangesSum {
                     if (i == numberToSkip){
                         sum2 = sum2 + numberToSkip;
                     }
-                    if(i != numberToSkip) {
+                    else {
                         sum += i;
                     }
                 }
