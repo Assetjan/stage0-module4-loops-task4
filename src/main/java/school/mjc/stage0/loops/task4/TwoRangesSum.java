@@ -10,7 +10,9 @@ public class TwoRangesSum {
                     if (i == numberToSkip){
                         sum2 = sum2 + numberToSkip;
                     }
-                    sum += i;
+                    if(i != numberToSkip) {
+                        sum += i;
+                    }
                 }
                 System.out.println("skipped sum is "+sum2);
                 System.out.println("counted sum is "+sum);
